@@ -7,4 +7,4 @@ phases:
       - dotnet build -c release -o build_output
 artifacts:
   files:
-    - ./build_output/*
+    - LetsKube/build_output/**/*

@@ -1,6 +1,11 @@
 version: 0.2
 
 phases:
+  pre_build:
+    commands:
+      - printenv
+    finally:
+      - echo "finally this command runs"
   build:
     commands:
       - dotnet restore
